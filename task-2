@@ -1,0 +1,47 @@
+select * from empl
+where job='CLERK'
+
+select sal
+from empl
+where job='SALESMAN'
+
+select * from empl
+where sal >=2000
+
+select * from empl
+where ename='JONES'
+
+select * from empl
+where hiredate >TO_DATE('01-01-1981','DD-MM-YYYY')
+
+select * from empl
+where sal>=12000
+
+select empno
+from empl
+where deptno=30
+
+select ename
+from empl
+where hiredate <TO_DATE('1981','YYYY')
+
+select * from empl
+where job='MANAGER'
+
+select ename ,sal
+from empl
+where comm=1400
+
+select * from empl
+where comm>=sal
+
+
+select empno
+from empl
+where hiredate <TO_DATE('1987','YYYY')
+
+select * from empl
+where job='ANALYST'
+
+select * from empl
+where sal>=2000
