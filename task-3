@@ -1,0 +1,65 @@
+---------------Q1--------------
+create table students(
+student_id int PRIMARY KEY,
+student_name varchar(10),
+age int
+);
+----------Q2--------------
+insert into student values(101,'Nithi',22),
+insert into student values(101,'Nisha',24),
+
+**it will be error because primay key does not allow duplicate values 
+
+------------Q3-----------
+create table Stud(
+stud_id int,
+course_id int,
+primary key(stud_id,course_id)
+)
+
+---------Q4--------------
+create table customer(
+customer_id int PRIMARY KEY,
+customer_name varchar(10)
+);
+
+create table orders(
+order_id int PRIMARY KEY,
+customer_id int,
+FOREIGN KEY(customer_id)
+REFERENCES customer(customer_id)
+)
+
+---------Q5-------------
+insert into orders values (1,999)
+
+---------Q7--------------
+create table userses(
+user_id int PRIMARY KEY,
+user_name varchar(10),
+email varchar(20)unique
+);
+
+---------Q8--------------
+insert into userses values (101,'nila','nila@gmail.com');
+insert into userses values (102,'sana','nila@gmail.com');
+
+---------Q9--------------
+create table use(
+user_id int PRIMARY KEY,
+user_name varchar(10)unique,
+email varchar(20)unique
+);
+
+---------Q10--------------
+create table products(
+product_id int PRIMARY KEY,
+product_name varchar(20)NOT NULL,
+price decimal(10,2)
+);
+
+select*from products
+
+---------Q11-------------
+insert into product(product_id,product_name)
+values(1,'lap')
